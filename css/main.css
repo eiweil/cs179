@@ -95,26 +95,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    align-content: center;
+}
 
 h1 {
-    font-family: "Open Sans Semibold";
-    font-style: 61px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 61px;
     color: #4A4A4A;
 }
 
 p.regular {
-    font-family: "Open Sans Light";
-    font-style: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
     color: #4A4A4A;
 }
 
 p.light {
-    font-family: "Open Sans Light";
-    font-style: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
     color: #7C8595;
 }
 
-
+#footer {
+    background-color: #DDE8F1;
+}
 
 
 
