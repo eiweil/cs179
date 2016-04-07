@@ -96,6 +96,24 @@ textarea {
    ========================================================================== */
 
 
+h1 {
+    font-family: "Open Sans Semibold";
+    font-style: 61px;
+    color: #4A4A4A;
+}
+
+p.regular {
+    font-family: "Open Sans Light";
+    font-style: 21px;
+    color: #4A4A4A;
+}
+
+p.light {
+    font-family: "Open Sans Light";
+    font-style: 21px;
+    color: #7C8595;
+}
+
 
 
 
