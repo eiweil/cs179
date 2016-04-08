@@ -1,28 +1,23 @@
-@font-face {
-   font-family: Open Sans, sans-serif;
-   src: url(https://fonts.googleapis.com/css?family=Open+Sans);
-}
-
 body {
     align: center;
 }
 
 h1 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 61px;
     color: #4A4A4A;
 }
 
 p.regular {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 21px;
     color: #4A4A4A;
 }
 
 p.light {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 21px;
     color: #7C8595;
@@ -60,7 +55,7 @@ button {
 
 .col2{
     float:left;
-    margin-left: 200px;
+    margin-left: 170px;
 }
 
 .col3{
