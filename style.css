@@ -13,7 +13,7 @@ h1 {
 p.regular {
     font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 21px;
+    font-size: 18px;
     color: #4A4A4A;
 }
 
@@ -57,13 +57,25 @@ button {
     width:150px;
 }
 
+.acctype {
+    width:200px;
+    background-color: white; 
+    border: solid 3px #6698D8;
+    color: #9B9B9B;
+}
+
+.acctype.focus, .acctype:focus {
+    background-color: #6698D8;
+}
+
+
 input[type="text"] {
     padding: 10px;
     border: none;
     border-bottom: solid 3px #6698D8;
     width: 400px;
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: 18px;
     color: #9B9B9B;
 
 }
