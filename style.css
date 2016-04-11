@@ -48,13 +48,14 @@ button {
     background-color: #F9E7A3; 
     border: none;
     color: #4A4A4A;
-    padding: 15px 32px;
+
     text-align: center;
     vertical-align: center;
     text-decoration: none;
     font-size: 16px;
     border-radius: 6px;
-    width:150px;
+    height: 45px;
+    font-family: 'Open Sans';
 }
 
 .acctype {
@@ -68,6 +69,27 @@ button {
     background-color: #6698D8;
 }
 
+.minor {
+    background-color: white; 
+    border: solid 3px #F9E7A3;
+    color: #4A4A4A;
+    width: 150px;
+    height: 45px;
+}
+
+.minor.focus, .minor:focus {
+    background-color: #F9E7A3;
+}
+
+.major {
+    width: 150px;
+    height: 45px;
+    color: #4A4A4A;
+}
+
+.minor.focus, .minor:focus {
+    background-color: #F9E7A3;
+}
 
 input[type="text"] {
     padding: 10px;
@@ -81,22 +103,37 @@ input[type="text"] {
 }
 
 .col1{
-    float:left;
+    float: left;
     margin-left: 20px;
 }
 
 .col2{
-    float:left;
+    float: left;
     margin-left: 200px;
 }
 
 .col3{
-    float:left;
+    float: left;
     margin-left: 20px;
 }
 
 .col4{
-    float:right;
+    float: right;
     padding:20px;
     margin: 20px;
 }
+
+#sidebar{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#library{
+    float: left;
+    margin-left: 15px;
+}
+
+
+
+
