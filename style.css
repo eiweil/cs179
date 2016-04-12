@@ -56,6 +56,12 @@ p.light {
     left: 20;
 }
 
+#lilhouse{
+    position: relative;
+    top: -600px;
+    left: 40px;
+}
+
 #toggle-box{
     background-color: #DDE8F1;
     border-radius: 6px;
