@@ -68,6 +68,14 @@ p.light {
 
 }
 
+table{
+    padding:10px;
+}
+
+td{
+    padding:5px;
+}
+
 button {
     background-color: #F9E7A3; 
     border: none;
