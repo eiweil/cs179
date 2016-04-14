@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,19 +36,13 @@
 
 	<div id = "content">
 		<div id = "sidebar">
-			<button class = "major"> CREATE NEW </button>
+			<button id="toggle-box"> CREATE NEW </button>
 			<br>
 			<br>
-			<button class = "minor"> OPEN </button>
-		</div><div id = "library">
-			<img src = "samplegrid.png" width = "325px">
-		</div>
-		<div id="icons">
-			<img src="gridicon.jpg" width="20px"> &nbsp&nbsp <img src="listicon.jpg" width="20px">
-		</div>
 
-			<div id="toggle-box">
-				<h3> NEW FILE </h3>
+			<div id="toggle-box" class="modal">
+
+			  <h3> NEW OBJECT </h3>
 				<form>
 				  <input type="text" name="email" value="File Name" style="background-color: #DDE8F1;">
 				</form>
@@ -101,12 +94,20 @@
 						</table>
 					</div>
 					<br>
-					<button style="width:200px" background-color: "#6698D8" onclick="location.href='http://team13.sp16.cs179.org/projectview.html'"> LET'S GO </button>
+					<button style="width:200px; background-color: #6698D8;" onclick=location.href="http://team13.sp16.cs179.org/projectview.html"> LET'S GO </button>
+					<button style="width:200px; background-color: #6698D8;" onclick=location.href="http://team13.sp16.cs179.org/startproject.html"> BACK </button>
 					<br>
 					<br>
 			</div>
-	
-	</div>
+
+			</div>
+			<button class = "minor"> OPEN </button>
+
+		<div id="icons">
+			<img src="gridicon.jpg" width="20px"> &nbsp&nbsp <img src="listicon.jpg" width="20px">
+		</div>
+
+
 	</center>
 
 
