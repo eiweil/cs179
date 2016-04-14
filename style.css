@@ -1,5 +1,11 @@
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
+  height: 100%;
     align: center;
 }
 
@@ -17,6 +23,16 @@ h3 {
     color: #4A4A4A;
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 p.regular {
     font-family: 'Open Sans';
     font-weight: 300;
@@ -29,6 +45,47 @@ p.light {
     font-weight: 300;
     font-size: 18px;
     color: #7C8595;
+}
+
+.buttons {
+  margin: 51px 0;
+}
+
+.button--modal {
+  width:200px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.button--modal:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+.actions {
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.action {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px 0 0 8px;
+    background-color: #DDE8F1;
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.action-send {
+    background-image: url('sendicon.png');
+}
+
+.action-save {
+    margin-top: 5px;
+    background-image: url('saveicon.png');
 }
 
 #content{
@@ -66,12 +123,12 @@ p.light {
     background-color: #DDE8F1;
     border-radius: 6px;
     position: absolute;
-    z-index : 2;
+    z-index : 4;
     width: 460px;
-    clear: all;
-    align-self: center;
-    margin-left: 55px;
-    margin-top: -45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
 }
 
 #toggle{
@@ -92,7 +149,7 @@ td{
 }
 
 button {
-    background-color: #F9E7A3; 
+    background-color: #F9E7A3;
     border: none;
     color: #5A5A5A;
     text-align: center;
@@ -107,7 +164,7 @@ button {
 
 .acctype {
     width:200px;
-    background-color: white; 
+    background-color: white;
     border: solid 3px #6698D8;
     color: #9B9B9B;
 }
@@ -117,7 +174,7 @@ button {
 }
 
 .minor {
-    background-color: white; 
+    background-color: white;
     border: solid 3px #F9E7A3;
     width: 150px;
     height: 45px;
@@ -140,12 +197,30 @@ input[type="text"] {
     padding: 10px;
     border: none;
     border-bottom: solid 3px #6698D8;
+    border-radius: 0;
     width: 400px;
     font-family: 'Open Sans';
     font-size: 18px;
     color: #9B9B9B;
 
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 3px #6698D8;
+    width: 400px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #4A4A4A;
+    background-color: transparent;
+}
+
+select:invalid { font-weight: 200; color: #7C8595; }
 
 .col1{
     float: left;
@@ -197,6 +272,3 @@ input[type="text"] {
     background-color: rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-
-
-
