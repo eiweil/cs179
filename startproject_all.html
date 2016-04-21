@@ -20,11 +20,10 @@
 		    s.parentNode.insertBefore(wf, s);
 		  })();
 
-		  function mark(el) {
-			    el.style.border = "2px solid #6698D8";
-			}
-
 		  </script>
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -40,13 +39,29 @@
 
 	<div id = "content">
 		<div id = "sidebar">
-			<button id="toggle-box"> CREATE NEW </button>
+			<button class = "major" onclick="location.href='/startproject_newcreation.html'"> CREATE NEW </button>
 			<br>
 			<br>
+			
+			<div class="dropdown">
+			  <button class="minor" type="button" data-toggle="dropdown"> CHOOSE CLASS
+			  <span class="caret"></span></button>
+			  <ul class="dropdown-menu">
+			    <li><a href="/startproject_class1.html">Advanced Figure Drawing</a></li>
+			    <li><a href="/startproject_class2.html">Figure Painting 101</a></li>
+			    <li><a href="/startproject_all.html">Unsorted</a></li>
+			  </ul>
+			</div>
 
-			<div id="toggle-box" class="modal">
+		</div><div id = "library">
+			<img src = "samplegrid.png" width = "325px">
+		</div>
+		<div id="icons">
+			<img src="gridicon.jpg" width="20px"> &nbsp&nbsp <img src="listicon.jpg" width="20px">
+		</div>
 
-			  <h3> NEW OBJECT </h3>
+			<div id="toggle">
+				<h3> NEW FILE </h3>
 				<form>
 				  <input type="text" name="email" value="File Name" style="background-color: #DDE8F1;">
 				</form>
@@ -55,65 +70,55 @@
 						<table>
 							<tr>
 								<td>
-									<img src="cube.jpg" width="130px" onclick="mark(this)">
+									<img src="cube.jpg" width="130px">
 									<p class="regular">Cube</p>
 								</td>
 								<td>
-									<img src="pyramid.jpg" width="130px" onclick="mark(this)">
+									<img src="pyramid.jpg" width="130px">
 									<p class="regular">Pyramid</p>
 								</td>
 								<td>
-									<img src="cylinder.jpg" width="130px" onclick="mark(this)">
+									<img src="cylinder.jpg" width="130px">
 									<p class="regular">Cylinder</p>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="malehead.jpg" width="130px" onclick="mark(this)">
+									<img src="malehead.jpg" width="130px">
 									<p class="regular">Male Face</p>
 								</td>
 								<td>
-									<img src="malebody.jpg" width="130px" onclick="mark(this)">
+									<img src="malebody.jpg" width="130px">
 									<p class="regular">Male Body</p>
 								</td>
 								<td>
-									<img src="femalehead.jpg" width="130px" onclick="mark(this)">
+									<img src="femalehead.jpg" width="130px">
 									<p class="regular">Female Face</p>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="malehead.jpg" width="130px" onclick="mark(this)">
+									<img src="malehead.jpg" width="130px">
 									<p class="regular">Male Face</p>
 								</td>
 								<td>
-									<img src="malebody.jpg" width="130px" onclick="mark(this)">
+									<img src="malebody.jpg" width="130px">
 									<p class="regular">Male Body</p>
 								</td>
 								<td>
-									<img src="femalehead.jpg" width="130px" onclick="mark(this)">
+									<img src="femalehead.jpg" width="130px">
 									<p class="regular">Female Face</p>
 								</td>
 							</tr>
 						</table>
 					</div>
 					<br>
-
-					<button style="width:150px; background-color: #6698D8;" onclick=location.href="/startproject.html"> BACK </button>
-
-					<button style="width:150px; background-color: #6698D8;" onclick=location.href="/projectview.html"> LET'S GO </button>
+					<button style="width:200px; background-color: #6698D8;"> LET'S GO </button>
 					<br>
 					<br>
 			</div>
-
-			</div>
-			<button class = "minor"> OPEN </button>
-
-		<div id="icons">
-			<img src="gridicon.jpg" width="20px"> &nbsp&nbsp <img src="listicon.jpg" width="20px">
-		</div>
-
-
+	
+	</div>
 	</center>
 
 

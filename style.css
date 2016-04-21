@@ -47,6 +47,13 @@ p.light {
     color: #7C8595;
 }
 
+h6 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
 .buttons {
   margin: 51px 0;
 }
@@ -95,7 +102,8 @@ p.light {
     padding-top: 50px;
     clear:all;
     width:600px;
-     z-index : 0;
+    z-index: 0;
+    min-height: 400px;
 }
 
 #footer {
@@ -146,6 +154,7 @@ table{
 
 td{
     padding:5px;
+    align:center;
 }
 
 button {
@@ -171,6 +180,10 @@ button {
 
 .acctype.focus, .acctype:focus {
     background-color: #6698D8;
+}
+
+img.focus, img:focus {
+    border: solid 3px #F9E7A3;
 }
 
 .minor {
@@ -258,6 +271,10 @@ select:invalid { font-weight: 200; color: #7C8595; }
     position: relative;
     right: 60px;
     top: -30px;
+}
+
+#classnum{
+    display:none;
 }
 
 /* Overwrite the default to keep the scrollbar always visible */

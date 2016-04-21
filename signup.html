@@ -17,7 +17,19 @@
 		    wf.async = 'true';
 		    var s = document.getElementsByTagName('script')[0];
 		    s.parentNode.insertBefore(wf, s);
-		  })(); </script>
+		  })(); 
+
+		  function showbox() {
+			    var x = document.getElementById("classnum");
+    			x.style.display = "block";
+			}
+
+			function hidebox() {
+			    var x = document.getElementById("classnum");
+    			x.style.display = "none";
+			}
+
+		  </script>
 
 
 </head>
@@ -40,11 +52,16 @@
 		<br>
 		<p class="regular">I am a...<p>
 		<br>
-		<button class="acctype">Teacher</button> &nbsp&nbsp&nbsp <button class="acctype">Student</button>
+		<button class="acctype" onclick="hidebox()">Teacher</button> &nbsp&nbsp&nbsp <button class="acctype" onclick="showbox()">Student</button>
+		<br>
+		<br>
+		<form id ="classnum">
+		  <input type="text" name="classid" value="Enter Classroom Code">
+		</form>
 		<br>
 		<br>
 		<br>
-		<button style="width:300px" onclick="location.href='http://team13.sp16.cs179.org/startproject_newcreation.html'"> SIGN UP </button>
+		<button style="width:300px" onclick="location.href='/startproject_newcreation.html'"> SIGN UP </button>
 	
 	</div>
 	</p>
